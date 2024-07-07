@@ -2,36 +2,16 @@
 
 import Link from "next/link";
 import { Button } from "./ui/button";
+import Links from "./../public/utils/links.json"
 import { usePathname } from "next/navigation";
-
-const links = [
-  {
-    name:"home",
-    path:"/"
-  },
-  {
-    name:"servicios",
-    path: "/services"
-  },
-  {
-    name:"resumen",
-    path: "/resume"
-  },
-  {
-    name:"work",
-    path: "/work"
-  },
-  {
-    name:"contact",
-    path: "/contact"
-  }
-]
+import { useTranslation } from 'next-i18next';
 
 const Nav = () => {
+  const { t } = useTranslation('common');
   const pathname = usePathname();
   return <nav className="flex gap-8">
-    {links.map((link, index) => {
-      return <Link className={`${link.path === pathname&& "text-accent border-b-2 border-accent"} capitalize font-mediun hover:text-accent translate-all` } key={index} href={link.path}>{link.name}</Link>
+    {Links.map((link, index) => {
+      return <Link className={`${link.path === pathname&& "text-accent border-b-2 border-accent"} capitalize font-mediun hover:text-accent translate-all` } key={index} href={link.path}>{t(link.name)}</Link>
     })}
   </nav>;
 };

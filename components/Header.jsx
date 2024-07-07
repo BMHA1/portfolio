@@ -1,14 +1,12 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Nav from "./Nav";
-// import { useTranslation } from 'next-i18next';
+import MobileNav from "./MobileNav";
 
 const Header = () => {
-  // const { t } = useTranslation('common');
-  // console.log(t('contact-here'));;
   return (
     <header className="px-8 xl:py-12 text-white ">
-      <div className="container mx-auto justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center">
         {/* {logo} */}
         <Link href="/">
           <h1 className="text-4xl font-semibold">
@@ -25,10 +23,7 @@ const Header = () => {
         </div>
         {/* {mobile Nav} */}
         <div className="xl:hidden">
-          <Nav />
-          <Link href={"/contact"}>
-            <Button>Contactameeeee</Button>
-          </Link>
+          <MobileNav />
         </div>
       </div>
     </header>

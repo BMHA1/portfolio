@@ -1,4 +1,7 @@
 {
-    "contact-here": "Contactame",
-    "welcome": "Welcome to my website!"
-  }
+  "home": "Inicio",
+  "services": "Servicios",
+  "resume": "Resumen",
+  "work": "Proyectos",
+  "contact": "Contáctame"
+}
