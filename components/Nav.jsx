@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
-import { capitalize } from "@mui/material";
 
 const links = [
   {
