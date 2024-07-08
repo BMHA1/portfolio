@@ -4,7 +4,7 @@ import {
 } from "./next-i18next.config.mjs";
 
 const nextConfig = {
-  i18n,
+  // i18n,
 };
 
 export default nextConfig;
