@@ -31,7 +31,7 @@ const Photo = () => {
               ease: "easeInOut",
             },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
+          className="w-[298px] h-[298px] xl:w-[406px] xl:h-[406px] mix-blend-lighten absolute"
         >
           <Image
             src="/assets/images/foto-brajin.png"
@@ -39,11 +39,11 @@ const Photo = () => {
             priority
             quality={100}
             fill
-            className="object-contain"
+            className="object-contain image-fade"
           />
         </motion.div>
         <motion.svg
-          className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
+          className="w-[300px] xl:w-[480px] h-[300px] xl:h-[480px]"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
